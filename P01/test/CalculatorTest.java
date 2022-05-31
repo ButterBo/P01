@@ -17,7 +17,19 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void testAdd() {
+	public void testAddN() {
+		//fail("Not yet implemented");
+		int a = 69000;
+		int b = 420;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.add(a,b);
+		
+		int expected =69420;
+		assertEquals (expected, actual);
+	}
+	
+	public void testAddB() {
 		//fail("Not yet implemented");
 		int a = 69000;
 		int b = 420;
