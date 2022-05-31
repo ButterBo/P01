@@ -19,13 +19,13 @@ public class CalculatorTest {
 	@Test //Normal
 	public void testAddN() {
 		//fail("Not yet implemented");
-		int a = 69000;
+		int a = 69;
 		int b = 420;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.add(a,b);
 		
-		int expected =69420;
+		int expected = 489;
 		assertEquals (expected, actual);
 	}
 	
@@ -33,51 +33,51 @@ public class CalculatorTest {
 	public void testAddB() {
 		//fail("Not yet implemented");
 		int a = 0;
-		int b = 9999999;
+		int b = 9999;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.add(a,b);
 		
-		int expected = 9999999;
+		int expected = 9999;
 		assertEquals (expected, actual);
 	}
 	
 	@Test //Error
 	public void testAddE() {
 		//fail("Not yet implemented");
-		int a = 0;
-		int b = 9999999;
+		int a = -1;
+		int b = -1;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.add(a,b);
 		
-		String expected = "Banana";
-		assertNotEquals (expected, actual);
+		int expected = -69;
+		assertEquals (expected, actual);
 	}
 	
 	@Test //Normal
 	public void testSubtractN() {
 		//fail("Not yet implemented");
-		int a = 1000;
+		int a = 100;
 		int b = 999;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.subtract(a,b);
 		
-		int expected =1;
+		int expected = -899;
 		assertEquals (expected, actual);
 	}
 	
 	@Test //Boundary
 	public void testSubtractB() {
 		//fail("Not yet implemented");
-		int a = 10000;
+		int a = 9999;
 		int b = 0;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.subtract(a,b);
 		
-		int expected = 10000;
+		int expected = 9999;
 		assertEquals (expected, actual);
 	}
 	
@@ -85,13 +85,13 @@ public class CalculatorTest {
 	public void testSubtractE() {
 		//fail("Not yet implemented");
 		int a = -1;
-		int b = 999;
+		int b = -1;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.subtract(a,b);
 		
-		int expected = 1000;
-		assertNotEquals (expected, actual);
+		int expected = -69;
+		assertEquals (expected, actual);
 	}
 	
 	@Test
@@ -110,27 +110,27 @@ public class CalculatorTest {
 	@Test
 	public void testMultiplyB() {
 		//fail("Not yet implemented");
-		int a = 1;
-		int b = 99999;
+		int a = 0;
+		int b = 9999;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.multiply(a,b);
 		
-		int expected = 99999;
+		int expected = 0;
 		assertEquals (expected, actual);
 	}
 	
 	@Test
 	public void testMultiplyE() {
 		//fail("Not yet implemented");
-		int a = 0;
-		int b = 0;
+		int a = -12;
+		int b = 2000;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.multiply(a,b);
 		
-		int expected = 1;
-		assertNotEquals (expected, actual);
+		int expected = -69;
+		assertEquals (expected, actual);
 	}
 	
 	
@@ -150,27 +150,27 @@ public class CalculatorTest {
 	@Test
 	public void testDivideB() {
 		//fail("Not yet implemented");
-		int a = 10000;
-		int b = 1;
+		int a = 0;
+		int b = 9999;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.divide(a,b);
 		
-		int expected = 10000;
+		int expected = 0;
 		assertEquals (expected, actual);
 	}
 	
 	@Test
 	public void testDivideE() {
 		//fail("Not yet implemented");
-		int a = 144;
-		int b = 13;
+		int a = 12;
+		int b = -2;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.divide(a,b);
 		
-		int expected = 12;
-		assertNotEquals (expected, actual);
+		int expected = -69;
+		assertEquals (expected, actual);
 	}
 
 	@After
