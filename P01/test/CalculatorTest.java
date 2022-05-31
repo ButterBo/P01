@@ -31,13 +31,13 @@ public class CalculatorTest {
 	
 	public void testAddB() {
 		//fail("Not yet implemented");
-		int a = 69000;
-		int b = 420;
+		int a = 0;
+		int b = 9999999;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.add(a,b);
 		
-		int expected =69420;
+		int expected = 9999999;
 		assertEquals (expected, actual);
 	}
 	
